@@ -1,0 +1,36 @@
+
+#include <iostream>
+#include<cmath>
+using namespace std;
+int main()
+{
+	setlocale(LC_ALL, "rus");
+	int a, b, i = 2;
+	int x = 1;
+	int m, n;
+	int d=1, c=1;
+	cout << "Введите диапазон" << endl;
+	cin >> a;
+	cin >> b;
+	for (a; a <= b; a++)
+	{
+		if (a % 2 != 0) {
+			x = a;
+			if (x % 3 != 0) {
+				d = x;
+				if (d % 5 != 0) {
+					c = d;
+					if (c % 7 != 0) {
+						n = c;
+						if (n % 9 != 0) {
+							m = n;
+							cout << m << endl;
+						}
+					}
+				}
+		}
+		}
+
+
+	}
+}
