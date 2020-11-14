@@ -3,11 +3,18 @@ using namespace std;
 int main()
 {
 	int a, b, c, d;
+	bool t = 0;
 	cin >> a >> b >> c >> d;
-	for (int i = 10000; i < 100000; i++){
-		if (i % a==b && i%c == d)
+	for (int i = 10000; i < 100000; i++) {
+		if (i % a == b && i % c == d)
+		{
+			t = 1;
 			cout << i << "   ";
+		}
+			
 	}
 	cout << endl;
+	if (t == false)
+		return -1;
 
 }
